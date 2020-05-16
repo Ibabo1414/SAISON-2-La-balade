@@ -1,19 +1,37 @@
-/*Ecrire un programme qui demande de saisir les noms et les moyennes des élèves d’une classe et 
-affiche le premier de la classe (son nom ainsi que sa moyenne).
+/**
+*Épisode 8 de la SAISON 2 : la balade
+*Ecrire un programme qui demande de saisir les noms et les moyennes des élèves d’une classe et 
+*affiche le premier de la classe (son nom ainsi que sa moyenne).
 */
-	var tableaueleves = [];
 
+//Temporaire
+let nomeleves;
+let moyeleves;
+let espace;
+let deuxpoint;
+let nometmoyenne;
+
+//Insertion des données dans le tableau.
+let tableaueleves = [];
+
+//Initialisation de la boucle
 while (true){
-	var nomeleves = prompt("Nom de l'élève");
-	var moyeleves = parseInt(prompt("Moyenne de l'élève"));
-	var espace = " ";
-	var deuxpoint = ":";
-	var nometmoyenne = espace + nomeleves + espace + deuxpoint + espace + moyeleves;
-	if(nomeleves != ''){
+	nomeleves = prompt("Nom de l'élève");
+	moyeleves = parseInt(prompt("Moyenne de l'élève"));
+	espace = " ";
+	deuxpoint = ":";
+	nometmoyenne = espace + nomeleves + espace + deuxpoint + espace + moyeleves;
+
+//Début
+if(nomeleves != '')
+	{
 		tableaueleves.push(nometmoyenne);
-		}else {
-			break;
-		}
-}
-	alert(tableaueleves);
-/*alert(Math.max(tableaueleves[moyeleves]));*/
+	}
+else 
+	{
+		break; 
+	}//fin
+
+	//Affichage des noms et moyennes.
+} alert(tableaueleves);
+
