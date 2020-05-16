@@ -1,4 +1,4 @@
-/**
+/*
 *Épisode 1 de la SAISON 1 : Mbolo JS
 *Transformer les épisodes 1, 2, 4, 6 et 7 en leur équivalent en fonction.
 *Dans cette première épisode, il était question 
@@ -6,7 +6,7 @@
 */
 
 //Éxécution du code
-function salutation(message){
+function salutation(){
 let message = "Mbolo Js";
 
 //Affichage du message.
@@ -23,7 +23,7 @@ alert (message);
 */
 
 //Éxécution du code
-function renseignement(nom, phrase){
+function renseignement(){
 
 //Récupération des données.
 let nom = prompt ("Quel est votre nom ?");
@@ -36,14 +36,14 @@ alert (nometphrase);
 	renseignement();
 
 
-/**
+/*
 *Épisode 4 de la SAISON 1 : Mbolo JS
 *Pour l'épisode 4, il était simplement question d'écrire un programme permettant 
 *de permuter les valeurs de deux variables. Le résultat est affiché en console.
 */
 
 //Éxécution du code
-function permutation(nombreymii){
+function permutation(a, b){
 
 //Tableau
 let nombreymii = ["6", "2"];
@@ -63,7 +63,7 @@ console.log(nombreymii);
 */
 
 //Éxécution du code
-function lamoyenne(nombreymii){
+function lamoyenne(nombreymiio){
 
 //Récupération des données.
 let x = parseInt(prompt("insérez le prémier nombre"));
@@ -96,7 +96,7 @@ while(isNaN(z)){
 */
 
 //Éxécution du code
-function lagedelutilisateur(age){
+function lagedelutilisateur(){
 let age = parseInt(prompt("Quel âge avez-vous ?"));
 
 //Initialissation de la boucle.
@@ -110,14 +110,12 @@ let info = "(Votre âge est de :"
 let espace = " ";
 let utilisateurage = [age];
 
-//Début
 if(age >= 18)
 {
    alert("Vous êtes majeur :"+ espace + info + espace + utilisateurage + espace + annee);
 }
 else
    alert("Vous êtes mineur"+ espace + info + espace + utilisateurage + espace + annee);
-}//fin
+}
 	lagedelutilisateur();
-
-
+	
