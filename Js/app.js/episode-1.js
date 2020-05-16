@@ -6,11 +6,11 @@
 
  // Récupération de l'e-mail
 let email = prompt("Veuillez entrer votre adresse mail");
-let regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+let srce = new RegExp( /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/);
 
  // Vérification de l'adresse e-mail
   // Début
-   if(!regex.test (email.value))
+   if(!srce.test (email.value))
    {
      alert("Votre mail a été envoyé");
    }

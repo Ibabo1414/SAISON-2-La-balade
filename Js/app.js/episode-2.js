@@ -7,9 +7,9 @@
 
 //Récupération des données
   let password = prompt("Veuillez entrer votre mot de passe");
-  let format =(/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8,})$/) ;
+  let regex =(/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8,})$/) ;
   
-  if(!format.test(password.value) && (password.length <= 8)) 
+  if(!regex.test(password.value) && (password.length <= 8)) 
   {
     alert("Votre mot de passe a été confirmé"); 
   } 

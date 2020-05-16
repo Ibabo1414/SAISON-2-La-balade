@@ -5,8 +5,8 @@
 */
 
 //Récupération de la date de naissance.
- var anniversaire = (prompt("Quel est votre date de naissance ? Ex. 12/12/1935"));
- var anniv2 =/^[0-9]{2}\/[0-9]{2}\/[0-9]{4}/;
+let anniversaire = (prompt("Quel est votre date de naissance ? Ex. 12/12/1935"));
+let anniv2 =/^[0-9]{2}\/[0-9]{2}\/[0-9]{4}/;
    
   if(!anniv2.test(anniversaire.value)) 
   {
